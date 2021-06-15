@@ -12,7 +12,7 @@ body {
 
 .container {
     margin: 10px auto;
-    width: 70%;
+    width: 60%;
 }
 
 .header,
@@ -52,10 +52,12 @@ body {
 }
 
 .debug .sidebar {
+    height: 100%;
     background-color: rgb(123, 190, 235) ;
 }
 
 .debug .content {
+    height: 100%;
     background-color: rgb(123, 190, 235) ;
 }
 
@@ -67,18 +69,19 @@ body {
     inset: 0;
 }
 
+
 .banner img, .main img, .overlay {
     border-radius: 10px;
 }
 
 #logo img {
     height: 60px;
-    border-right: 1px solid lightgray;
+    border-right: 1px solid rgb(238, 236, 236);
     padding-right: 10px;
 }
 
 nav {
-    margin: 20px 0;
+    margin: 30px 0;
 }
 
 nav li {
@@ -88,7 +91,7 @@ nav li {
 nav li a {
     font-size: 15px;
     padding-right: 10px;
-    color: black;
+    color: grey;
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -122,17 +125,47 @@ nav li a {
     font-size: 12px;
 }
 
+.main {
+    height: 650px;
+}
+
+.header_main {
+    margin: 30px 0;
+}
+
 .sidebar,
 .content {
+    position: relative;
     float: left;
+    height: 200px;
 }
 
 .sidebar {
     margin: 10px 0;
-    width: calc((100% / 4) - 10px);
+    width: calc((100% / 5) - 10px);
+}
+
+.sidebar img, .content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .content {
     margin: 10px 10px;
-    width: calc((100% / 4)*2);
+    width: calc((100% / 5)*3);
+}
+
+.sidebar span, .content span {
+    font-size: 15px;
+}
+
+.sidebar h4, .content h4 {
+    margin: 15px 0;
+}
+
+.footer {
+    text-align: center;
+    line-height: 20px;
+    height: 20px;
 }
